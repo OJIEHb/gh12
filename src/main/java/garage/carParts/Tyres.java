@@ -6,10 +6,14 @@ import org.springframework.stereotype.Component;
 /**
  * Created by andrey on 29.01.17.
  */
-@Component
 public class Tyres {
     protected String name;
     protected  int size;
+
+    public void init() {
+        setName("Tyres");
+        setSize(16);
+    }
 
     public String getName() {
         return name;
@@ -19,12 +23,10 @@ public class Tyres {
         return size;
     }
 
-    @Required
     public void setName(String name) {
         this.name = name;
     }
 
-    @Required
     public void setSize(int size) {
         this.size = size;
     }

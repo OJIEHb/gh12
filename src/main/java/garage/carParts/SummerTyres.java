@@ -5,6 +5,9 @@ import org.springframework.stereotype.Component;
 /**
  * Created by andrey on 29z.01.17.
  */
-@Component
 public class SummerTyres extends Tyres {
+    public void init() {
+        setName("SummerTyres");
+        setSize(17);
+    }
 }
